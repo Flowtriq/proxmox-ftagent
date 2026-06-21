@@ -1,0 +1,47 @@
+{
+  "name": "Flowtriq Agent",
+  "slug": "ftagent",
+  "categories": [4],
+  "date_created": "2026-06-20",
+  "type": "ct",
+  "updateable": true,
+  "privileged": true,
+  "has_arm": true,
+  "interface_port": null,
+  "documentation": "https://flowtriq.com/docs",
+  "website": "https://flowtriq.com",
+  "logo": "https://flowtriq.com/flowtriq-icon.png",
+  "description": "Flowtriq Agent (ftagent) is a real-time DDoS detection agent that monitors network traffic, classifies attacks by protocol and vector, captures forensic PCAPs, and triggers automated mitigation. Designed for hosting providers, game server networks, and anyone running infrastructure that needs to stay online.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/ftagent.sh",
+      "config_path": "/etc/ftagent/config.json",
+      "resources": {
+        "cpu": 1,
+        "ram": 256,
+        "hdd": 2,
+        "os": "Debian",
+        "version": "12"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "After installation, run `ftagent --setup` to configure your API key and Node UUID from the Flowtriq dashboard.",
+      "type": "warning"
+    },
+    {
+      "text": "A free 14-day trial is available at flowtriq.com/signup. No credit card required.",
+      "type": "info"
+    },
+    {
+      "text": "The container runs privileged to allow raw packet capture (CAP_NET_RAW). Ensure the container's network interface has visibility into the traffic you want to monitor.",
+      "type": "info"
+    }
+  ]
+}
