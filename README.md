@@ -116,6 +116,7 @@ Contributions welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 ## Links
 
 - [Flowtriq](https://flowtriq.com) - DDoS detection platform
+- [Discord](https://discord.gg/SsTWMYuyGG) - Community and support
 - [ftagent on PyPI](https://pypi.org/project/ftagent/) - Agent package
 - [ftagent on GitHub](https://github.com/flowtriq/ftagent) - Agent source
 - [Flowtriq Docs](https://flowtriq.com/docs) - Full documentation
