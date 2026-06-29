@@ -15,6 +15,10 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License"></a>
 </p>
 
+<p align="center">
+  <b><a href="https://flowtriq.com/integrations/proxmox">Integration Guide</a></b> | <b><a href="https://flowtriq.com/docs">Documentation</a></b> | <b><a href="https://flowtriq.com/signup">Sign Up</a></b>
+</p>
+
 ---
 
 ## What is this?
@@ -69,7 +73,7 @@ The update function upgrades the pip package and restarts the service.
 |---|---|
 | **OS** | Debian 12 (Bookworm) |
 | **Agent** | `ftagent[full]` from [PyPI](https://pypi.org/project/ftagent/) |
-| **System deps** | `python3`, `python3-pip`, `libpcap-dev`, `tcpdump` |
+| **System deps** | `python3`, `python3-pip`, `python3-venv`, `libpcap-dev`, `tcpdump` |
 | **Config** | `/etc/ftagent/config.json` |
 | **Service** | `ftagent.service` (systemd, auto-restart on failure) |
 | **PCAPs** | `/var/lib/ftagent/pcaps` (7-day retention) |
@@ -122,6 +126,14 @@ Contributions welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 - [Flowtriq Docs](https://flowtriq.com/docs) - Full documentation
 - [Proxmox VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/) - Community script collection
 
+## Get Started
+
+Start your free 14-day trial at [flowtriq.com/signup](https://flowtriq.com/signup).
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+---
+
+Built by [Flowtriq](https://flowtriq.com) - Real-time DDoS detection and mitigation.

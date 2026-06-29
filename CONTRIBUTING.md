@@ -25,7 +25,7 @@ This repo follows the [community-scripts/ProxmoxVE](https://github.com/community
 - Use `msg_info` / `msg_ok` / `msg_error` for status messages
 - Use heredocs for writing config files
 - No `sudo` (containers run as root)
-- No `apt-get` (use `apt`)
+- Use `apt-get` for scripted installs (not `apt`, which is for interactive use)
 - Quote all variables
 
 ## Code of conduct
